@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+	--color-mint-500: oklch(0.72 0.11 178);
+}
+
+h1 {
+	@apply text-3xl;
+}
+
+* {
+	font-family: var(--font-serif);
+	font-size: 1rem;
+}
+
+.separator {
+	display: inline;
+	margin: 0 .75ch;
+}
+.separator::before {
+	content: '|'
+}
+
+li::before {
+	display: inline-block;
+	margin: 0 .5ch;
+	content: '•';	
+}
+
+section {
+	margin-top: 1ch;
+	& h2 {
+		@apply uppercase font-bold text-xl w-full border-b-2;
+	}
+	& h3 {
+		@apply flex;
+		& .title {
+			@apply font-bold ;
+		}
+		& .date {
+			@apply w-[90vw] absolute text-end;
+		}
+	}
+	& h4 {
+		font-style: italic;
+	}
+}

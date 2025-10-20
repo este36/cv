@@ -1,0 +1,10 @@
+{
+	"scripts": {
+		"dev": "vite dev --port 4321"
+	},
+	"dependencies": {
+		"@tailwindcss/vite": "^4.1.15",
+		"tailwind": "^4.0.0",
+		"vite": "^7.1.11"
+	}
+}
