@@ -7,7 +7,12 @@
 	<style>
         @page {
             size: A4;
-            margin: 20mm;
+			--m-x: 10mm;
+			--m-y: 0mm;
+            margin-top: var(--m-x);
+            margin-bottom: var(--m-x);
+			margin-left: var(--m-y);
+			margin-right: var(--m-y);
         }
 	</style>
 	<title>CV Esteban Mercier 2025</title>
@@ -27,95 +32,134 @@
 			</a>
 		</p>
 	</header>
-	<main class="w-[90vw]">
+	<main>
 		<section>
-			<h2>Work experience</h2>
+			<h2>Compétences techniques</h2>
 			<h3>
-				<span class="title">Activ And Zen</span>
-				<div class="separator"></div>
-				Geneva
-				<div class="date">march 2025</div>
+				<span class="title mr-[1ch]">Languages de programation :</span>
+				C, C++, C#, Typescript, TailwindCSS
 			</h3>
-			<h4>Developer</h4>
-			<ul>
-				<li>Creation of a Enterprise Resource Planning for internal use using Excel, C#</li>
-			</ul>
 			<h3>
+				<span class="title mr-[1ch]">Outils de dévelopement :</span>
+				Git, Docker, Bash, Vim, Microsoft Visual Studio
+			</h3>
+			<h3>
+				<span class="title mr-[1ch]">Outils de productivité :</span>
+				Notion, Teams, suite office (Microsoft, Google)
+			</h3>
+		</section>
+		<section>
+			<h2>Experience</h2>
+			<h3 class="element-title">
+				<span class="title">Junior 42 Lausanne</span>
+				<div class="separator"></div>
+				Lausanne
+				<div class="date">Octobre 2025 - aujourd'hui</div>
+			</h3>
+			<h4>Developeur, Trésorier</h4>
+			<ul>
+				<li>Versement des salaires et gestion de la comptabilité</li>
+				<li>Création d'une dashboard de gestion et automatisation de la trésorerie (NextJS, Typescript)</li>
+				<li>Création d'un outil de scraping pour identifier des clients potentiels (Typescript, Puppeteer)</li>
+			</ul>
+			<h3 class="element-title">
 				<span class="title">Swiss Risk & Care</span>
 				<div class="separator"></div>
-				Geneva
-				<div class="date">january 2025 - march 2025</div>
+				Genève
+				<div class="date">Janvier 2025 - Mars 2025</div>
 			</h3>
-			<h4>Administrative assistant</h4>
+			<h4>Assistant Administratif</h4>
 			<ul>
-				<li>Migration of large database of documents</li>
-				<li>Automation of administrative tasks using VBA, Microsoft Excel</li>
+				<li>Migration d'une grande base de donnée de documents</li>
+				<li>Automatisation des tâches en utilisant VBA, Excel, et AutoHotKey, resultant d'une amélioration de 300% sur ma productivité.</li>
+				<li>Correction d'un bug dans un outil interne (Excel + VBA), offrant un jour de travail en moins aux gestionnaires dans mon équipe</li>
 			</ul>
-			<h3>
+			<h3 class="element-title">
 				<span class="title">Qualibroker</span>
 				<div class="separator"></div>
-				Geneva
-				<div class="date">june 2024 - sep. 2024</div>
+				Genève
+				<div class="date">Juin 2024 - Septembre 2024</div>
 			</h3>
-			<h4>Administrative assistant</h4>
+			<h4>Assistant Administratif</h4>
+			<ul>
+				<li>Report et vérification de données déstinées au gestionnaires</li>
+			</ul>
 		</section>
 		<section>
-			<h2>Projects</h2>
-			<h3>
-				<span class="title">Musicxml to iRealPro File Converter</span>
+			<h2>Projets</h2>
+			<h3 class="element-title">
+				<span class="title">Convertisseur de fichiers MusicXML vers iReal Pro
+					<a class="underline" href="https://github.com/este36/musicxml-irealpro">(lien github)</a>
+				</span>
 				<div class="separator"></div>
 				C, WASM, Javascript
-				<div class="date">october 2024 - today</div>
+				<div class="date">Octobre 2024 - aujourd'hui</div>
 			</h3>
-			<h4>Open source library to import musicxml files in iRealPro Application</h4>
+			<h4>Librairie open-source permettant d'importer des fichiers MusicXML dans l'application iReal Pro</h4>
 			<ul>
-				<li>Distribution of official npm package 'musicxml-irealpro'</li>
+				<li>Rétro-ingenierie du format proprietaire de iReal Pro</li>
+				<li>Dévellopement d'une Web App publique : 
+					<a class="underline" href="https://www.mxltoireal.com">mxltoireal.com</a>
+					, devenue une réference dans sa catégorie
+				</li>
+				<li>Maintenance sur le long-terme, gestion des retours utilisateurs</li>
 			</ul>
-			<h3>
-				<span class="title">Add-on for Sierra Chart and NinjaTrader</span>
+			<h3 class="element-title">
+				<span class="title">Projets à but éducatifs via l'école 42</span>
+				<div class="separator"></div>
+				C
+				<div class="date">Octobre 2025 - aujourd'hui</div>
+			</h3>
+			<ul>
+				<li>libft : reproduction de la majorité des fonction de la librairie standard</li>
+				<li>minishell : CLI reproduisant les fonctionnalités basiques de bash</li>
+				<li>cub3D : Jeu minimaliste en 3D utilisant le raytracing (software rendered)</li>
+			</ul>
+			<h3 class="element-title">
+				<span class="title">Add-on pour Sierra Chart et NinjaTrader</span>
 				<div class="separator"></div>
 				C++, C#
-				<div class="date">sep. 2023</div>
+				<div class="date">Septembre 2023</div>
 			</h3>
-			<h4>Trading tool to send trades from Sierra chart to NinjaTrader using raw binary-serialized messages with TCP.</h4>
+			<h4>Outil de trading permettant de dupliquer des trades depuis Sierra chart vers NinjaTrader</h4>
+			<ul>
+				<li>Implementation d'un middleware utilisant le protocole DTC pour relier les deux plateformes</li>
+			</ul>
 		</section>
 		<section>
-			<h2>Technical skills</h2>
-			<h3>
-				<span class="title mr-[1ch]">Programing languages :</span>
-				C, C++, C#, Python, Javascript, HTML, CSS, Tailwindcss
+			<h2>éducation</h2>
+			<h3 class="element-title">
+				<span class="title">42 Lausanne</span>
+				<div class="date">Septembre 2025 - aujourd'hui</div>
 			</h3>
-			<h3>
-				<span class="title mr-[1ch]">Developement Tools :</span>
-				Git, Docker, Cloudflare, Bash, Vim, Microsoft Visual Studio
+			<h4>Formation en vue d’obtenir le titre d’Architecte en Technologie du Numérique</h4>
+			<h3 class="element-title">
+				<span class="title">HEMU</span>
+				<div class="separator"></div>
+				Lausanne
+				<div class="date">Septembre 2023 - Juin 2024</div>
 			</h3>
-			<h3>
-				<span class="title mr-[1ch]">OS : </span>
-				Windows 10/11, Linux (Arch, Ubuntu)
-			</h3>
-		</section>
-		<section>
-			<h2>education</h2>
-			<h3>
+			<h4>Master en performance, guitare jazz (arret après une année d'étude, sans diplôme)</h4>
+			<h3 class="element-title">
 				<span class="title">Fachhochschule Nordwestschweiz FHNW</span>
 				<div class="separator"></div>
 				Jazzcampus, Basel
-				<div class="date">sep. 2020</div>
+				<div class="date">Septembre 2020 - Juin 2023</div>
 			</h3>
-			<h4>Bachelor of performance, jazz guitar</h4>
+			<h4>Bachelor en performance, guitare jazz</h4>
 		</section>
 		<section>
-			<h2>Speaking Languages</h2>
+			<h2>Languages</h2>
 			<ul>
-				<li>French (native)</li>
-				<li>English (fluent)</li>
-				<li>German (basic)</li>
+				<li>Français (maternel)</li>
+				<li>Anglais (courant)</li>
+				<li>Allemand (basique)</li>
 			</ul>
 		</section>
 		<section>
-			<h2>Hobbys</h2>
+			<h2>Hobbies</h2>
 			<ul>
-				<li>Music, guitar</li>
+				<li>Musique, guitare</li>
 				<li>Football</li>
 				<li>Babyfoot</li>
 			</ul>

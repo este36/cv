@@ -1,16 +1,23 @@
 @import "tailwindcss";
-
 @theme {
 	--color-mint-500: oklch(0.72 0.11 178);
 }
 
-h1 {
-	@apply text-3xl;
-}
-
 * {
 	font-family: var(--font-serif);
-	font-size: 1rem;
+	font-size: .9rem;
+	--main-width: 96%;
+
+	--text-xl: 1.2rem;
+	--text-xl--line-height: 1.50rem;
+}
+
+main {
+	width: var(--main-width);
+}
+
+h1 {
+	@apply text-3xl;
 }
 
 .separator {
@@ -27,6 +34,10 @@ li::before {
 	content: '•';	
 }
 
+.element-title {
+	@apply bg-[#e4e4e4];
+}
+
 section {
 	margin-top: 1ch;
 	& h2 {
@@ -35,10 +46,10 @@ section {
 	& h3 {
 		@apply flex;
 		& .title {
-			@apply font-bold ;
+			@apply font-bold;
 		}
 		& .date {
-			@apply w-[90vw] absolute text-end;
+			@apply text-end ml-auto;
 		}
 	}
 	& h4 {
